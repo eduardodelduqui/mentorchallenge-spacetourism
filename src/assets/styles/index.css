@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html, body, #root, .App {
+        @apply h-full;
+        @apply h-screen;
+    }
+
+    body {
+        @apply m-0;
+        @apply antialiased;
+    }
+
+    body * {
+        @apply box-border;
+        @apply duration-75;
+    }
+
+    main {
+        @apply h-full;
+    }
+
+    .main-content {
+        @apply bg-no-repeat bg-cover bg-center h-full px-6 overflow-y-auto;
+    }
+
+    h1, h2, h3, h4, h5 {
+        @apply font-bellefair;
+        @apply uppercase;
+        @apply m-0;
+        @apply font-normal;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 6.25rem;
+    }
+    h3 {
+        font-size: 3.5rem;
+    }
+    h4 {
+        font-size: 2rem;
+    }
+    h5 {
+        @apply font-barlowCondensed;
+        @apply text-base;
+    }
+    p {
+        @apply font-barlow;
+        font-size: 0.9375rem;
+        line-height: 25px;
+    }
+
+    .floating-button {
+        width: 150px;
+        height: 150px;
+    }
+
+    .menu-list-item.active {
+        @apply border-b-[3px];
+        @apply border-white;
+    }
+
+    .right-sidebar {
+        @apply hidden;
+    }
+
+    .right-sidebar.active {
+        @apply block;
+    }
+
+    .destination-item.active {
+        @apply text-white;
+        @apply border-b-2;
+        @apply border-white;
+    }
+
+    .crew-selector-item {
+        @apply opacity-[.17];
+    }
+
+    .crew-selector-item.active {
+        @apply opacity-100
+    }
+
+    .technology-selector-item {
+        @apply bg-transparent;
+        @apply border;
+        @apply border-white;
+        @apply border-opacity-25;
+        @apply text-white;
+    }
+
+    .technology-selector-item.active {
+        @apply bg-white;
+        @apply border-none;
+        @apply text-dark-blue-2;
+    }
+
+    .description {
+        @apply text-light-blue;
+        @apply text-center;
+        @apply sm:text-base;
+        @apply lg:text-left;
+    }
+}
