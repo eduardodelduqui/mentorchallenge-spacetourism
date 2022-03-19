@@ -17,6 +17,7 @@ module.exports = {
         'xxl': '9.375rem'
       },
       colors: {
+        'dark-gray': '#000203',
         'dark-blue': '#383B4B',
         'dark-blue-2': '#0B0D17',
         'light-blue': '#D0D6F9'
