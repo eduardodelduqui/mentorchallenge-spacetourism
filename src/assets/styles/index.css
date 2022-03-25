@@ -110,4 +110,8 @@
         @apply sm:text-base;
         @apply lg:text-left;
     }
+
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
 }
