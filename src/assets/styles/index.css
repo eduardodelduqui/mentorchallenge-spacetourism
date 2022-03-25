@@ -25,7 +25,8 @@
     }
 
     .main-content {
-        @apply bg-dark-gray bg-no-repeat bg-cover bg-center h-full px-6 overflow-y-auto;
+        overflow: overlay;
+        @apply bg-dark-gray bg-no-repeat bg-cover bg-center h-full px-6;
     }
 
     h1, h2, h3, h4, h5 {

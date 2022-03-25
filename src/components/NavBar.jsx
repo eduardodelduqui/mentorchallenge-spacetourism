@@ -110,7 +110,7 @@ export default function NavBar (props) {
                             <li className={`menu-list-item flex items-center uppercase tracking-[2px] border-b-[3px] 
                             border-white border-opacity-0 hover:border-opacity-50 ${isActive(item.name) ? 'border-opacity-100' : ''}`} key={item.id}>
                                 <Link
-                                    className="text-white flex gap-3"
+                                    className="text-white flex gap-3 h-full items-center"
                                     onClick={() => _closeRightSidebar()}
                                     to={item.url}
                                 >
